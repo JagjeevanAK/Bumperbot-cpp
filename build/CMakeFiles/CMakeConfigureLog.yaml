@@ -1,0 +1,535 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Darwin - 24.2.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/homebrew/bin/aarch64-apple-darwin24-gcc-14 
+      Build flags: -ftree-vectorize;-fPIC;-fstack-protector-strong;-O2;-pipe;-isystem;/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/homebrew/bin/aarch64-apple-darwin24-g++-14 
+      Build flags: -ftree-vectorize;-fPIC;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-fmessage-length=0;-isystem;/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/CMakeScratch/TryCompile-82cAOg"
+      binary: "/Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/CMakeScratch/TryCompile-82cAOg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/CMakeScratch/TryCompile-82cAOg'
+        
+        Run Build Command(s): /opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin/ninja -v cmTC_0168f
+        [1/2] /opt/homebrew/bin/aarch64-apple-darwin24-gcc-14   -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk   -v -Wl,-v -o CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/aarch64-apple-darwin24-gcc-14
+        Target: aarch64-apple-darwin24
+        Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran,m2 --program-suffix=-14 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 14.2.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin24 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Homebrew GCC 14.2.0_1) 
+        COLLECT_GCC_OPTIONS='-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-O2' '-pipe' '-isystem' '/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk' '-v' '-o' 'CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=15.0.0'  '-nodefaultexport' '-mcpu=apple-m1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_0168f.dir/'
+         /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/cc1 -quiet -v -iprefix /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/ -D__DYNAMIC__ -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk /opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeCCompilerABI.c -fPIC -quiet -dumpdir CMakeFiles/cmTC_0168f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mmacosx-version-min=15.0.0 -mcpu=apple-m1 -mlittle-endian -mabi=lp64 -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -o - |
+         as -arch arm64 -v -mmacosx-version-min=15.0 -o CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o -
+        GNU C17 (Homebrew GCC 14.2.0_1) version 14.2.0 (aarch64-apple-darwin24)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        clang version 17.0.6
+        Target: arm64-apple-darwin24.2.0
+        Thread model: posix
+        InstalledDir: /opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin
+        ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../../../../aarch64-apple-darwin24/include"
+        ignoring duplicate directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring duplicate directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed"
+        ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../../../../aarch64-apple-darwin24/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include
+         /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include
+         /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+        End of search list.
+         (in-process)
+         "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin/clang-17" -cc1as -triple arm64-apple-macosx15.0.0 -target-sdk-version=15.2 -filetype obj -main-file-name - -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -fdebug-compilation-dir=/Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/CMakeScratch/TryCompile-82cAOg -dwarf-debug-producer "clang version 17.0.6" -dwarf-version=4 -mrelocation-model pic -o CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o -
+        Compiler executable checksum: 826978d2e68c57dea7e81f3ab044ac79
+        COMPILER_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/
+        LIBRARY_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../
+        COLLECT_GCC_OPTIONS='-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-O2' '-pipe' '-isystem' '/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk' '-v' '-o' 'CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=15.0.0'  '-nodefaultexport' '-mcpu=apple-m1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /opt/homebrew/bin/aarch64-apple-darwin24-gcc-14 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -v -Wl,-v CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o -o cmTC_0168f   && :
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/aarch64-apple-darwin24-gcc-14
+        COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/lto-wrapper
+        Target: aarch64-apple-darwin24
+        Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran,m2 --program-suffix=-14 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 14.2.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin24 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Homebrew GCC 14.2.0_1) 
+        COMPILER_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/
+        LIBRARY_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../
+        COLLECT_GCC_OPTIONS='-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-O2' '-pipe' '-isystem' '/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk' '-L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib' '-v' '-o' 'cmTC_0168f' '-mmacosx-version-min=15.0.0' '-asm_macosx_version_min=15.0' '-nodefaultexport' '-mcpu=apple-m1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_0168f.'
+         /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/collect2 -demangle -dynamic -arch arm64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -platform_version macos 15.0.0 0.0 -o cmTC_0168f -L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14 -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../.. -lemutls_w -lheapt_w -search_paths_first -headerpad_max_install_names -headerpad_max_install_names -dead_strip_dylibs -rpath /opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -v CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14 -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current
+        collect2 version 14.2.0
+        /opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin/ld -demangle -dynamic -arch arm64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -platform_version macos 15.0.0 0.0 -o cmTC_0168f -L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14 -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../.. -lemutls_w -lheapt_w -search_paths_first -headerpad_max_install_names -headerpad_max_install_names -dead_strip_dylibs -rpath /opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -v CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14 -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current
+        @(#)PROGRAM:ld  PROJECT:ld64-711
+        BUILD 01:31:26 Mar 15 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+        Library search paths:
+        	/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib
+        	/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14
+        	/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc
+        	/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib
+        Framework search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include]
+          add: [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include]
+          add: [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        end of search list found
+        collapse include dir [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include] ==> [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include]
+        collapse include dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14/include]
+        collapse include dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        implicit include dirs: [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14/include;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/CMakeScratch/TryCompile-82cAOg']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin/ninja -v cmTC_0168f]
+        ignore line: [[1/2] /opt/homebrew/bin/aarch64-apple-darwin24-gcc-14   -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk   -v -Wl -v -o CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/aarch64-apple-darwin24-gcc-14]
+        ignore line: [Target: aarch64-apple-darwin24]
+        ignore line: [Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c c++ objc obj-c++ fortran m2 --program-suffix=-14 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 14.2.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin24 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Homebrew GCC 14.2.0_1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-O2' '-pipe' '-isystem' '/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk' '-v' '-o' 'CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=15.0.0'  '-nodefaultexport' '-mcpu=apple-m1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_0168f.dir/']
+        ignore line: [ /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/cc1 -quiet -v -iprefix /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/ -D__DYNAMIC__ -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk /opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeCCompilerABI.c -fPIC -quiet -dumpdir CMakeFiles/cmTC_0168f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mmacosx-version-min=15.0.0 -mcpu=apple-m1 -mlittle-endian -mabi=lp64 -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -o - |]
+        ignore line: [ as -arch arm64 -v -mmacosx-version-min=15.0 -o CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o -]
+        ignore line: [GNU C17 (Homebrew GCC 14.2.0_1) version 14.2.0 (aarch64-apple-darwin24)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [clang version 17.0.6]
+        ignore line: [Target: arm64-apple-darwin24.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../../../../aarch64-apple-darwin24/include"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../../../../aarch64-apple-darwin24/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include]
+        ignore line: [ /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include]
+        ignore line: [ /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        ignore line: [End of search list.]
+        ignore line: [ (in-process)]
+        ignore line: [ "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin/clang-17" -cc1as -triple arm64-apple-macosx15.0.0 -target-sdk-version=15.2 -filetype obj -main-file-name - -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -fdebug-compilation-dir=/Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/CMakeScratch/TryCompile-82cAOg -dwarf-debug-producer "clang version 17.0.6" -dwarf-version=4 -mrelocation-model pic -o CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o -]
+        ignore line: [Compiler executable checksum: 826978d2e68c57dea7e81f3ab044ac79]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-O2' '-pipe' '-isystem' '/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk' '-v' '-o' 'CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o' '-c' '-mmacosx-version-min=15.0.0'  '-nodefaultexport' '-mcpu=apple-m1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /opt/homebrew/bin/aarch64-apple-darwin24-gcc-14 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -v -Wl -v CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o -o cmTC_0168f   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/aarch64-apple-darwin24-gcc-14]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/lto-wrapper]
+        ignore line: [Target: aarch64-apple-darwin24]
+        ignore line: [Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c c++ objc obj-c++ fortran m2 --program-suffix=-14 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 14.2.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin24 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Homebrew GCC 14.2.0_1) ]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-O2' '-pipe' '-isystem' '/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk' '-L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib' '-v' '-o' 'cmTC_0168f' '-mmacosx-version-min=15.0.0' '-asm_macosx_version_min=15.0' '-nodefaultexport' '-mcpu=apple-m1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_0168f.']
+        link line: [ /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/collect2 -demangle -dynamic -arch arm64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -platform_version macos 15.0.0 0.0 -o cmTC_0168f -L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14 -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../.. -lemutls_w -lheapt_w -search_paths_first -headerpad_max_install_names -headerpad_max_install_names -dead_strip_dylibs -rpath /opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -v CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14 -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current]
+          arg [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/collect2] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.0.0] ==> ignore
+          arg [0.0] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_0168f] ==> ignore
+          arg [-L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib] ==> dir [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib]
+          arg [-L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14] ==> dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14]
+          arg [-L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc] ==> dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc]
+          arg [-L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../..] ==> dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../..]
+          arg [-lemutls_w] ==> lib [emutls_w]
+          arg [-lheapt_w] ==> lib [heapt_w]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-dead_strip_dylibs] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_0168f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lSystem] ==> lib [System]
+          arg [-no_compact_unwind] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [@loader_path] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current] ==> ignore
+        Library search paths: [;/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/]
+        remove lib [System]
+        collapse library dir [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib] ==> [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib]
+        collapse library dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14]
+        collapse library dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc]
+        collapse library dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../..] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current]
+        collapse library dir [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib] ==> [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib]
+        collapse library dir [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14]
+        collapse library dir [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc]
+        collapse library dir [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        implicit libs: [emutls_w;heapt_w;gcc]
+        implicit objs: []
+        implicit dirs: [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/CMakeScratch/TryCompile-axr2iR"
+      binary: "/Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/CMakeScratch/TryCompile-axr2iR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/CMakeScratch/TryCompile-axr2iR'
+        
+        Run Build Command(s): /opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin/ninja -v cmTC_df96d
+        [1/2] /opt/homebrew/bin/aarch64-apple-darwin24-g++-14   -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk   -v -Wl,-v -o CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/aarch64-apple-darwin24-g++-14
+        Target: aarch64-apple-darwin24
+        Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran,m2 --program-suffix=-14 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 14.2.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin24 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Homebrew GCC 14.2.0_1) 
+        COLLECT_GCC_OPTIONS='-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-O2' '-pipe' '-stdlib=libc++' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-isystem' '/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk' '-v' '-o' 'CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=15.0.0'  '-nodefaultexport' '-mcpu=apple-m1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_df96d.dir/'
+         /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/cc1plus -quiet -v -iprefix /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/ -D__DYNAMIC__ -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk /opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -fPIC -quiet -dumpdir CMakeFiles/cmTC_df96d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mmacosx-version-min=15.0.0 -mcpu=apple-m1 -mlittle-endian -mabi=lp64 -O2 -stdlib=libc++ -version -ftree-vectorize -fPIC -fstack-protector-strong -fvisibility-inlines-hidden -fmessage-length=0 -o - |
+         as -arch arm64 -v -mmacosx-version-min=15.0 -o CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o -
+        GNU C++17 (Homebrew GCC 14.2.0_1) version 14.2.0 (aarch64-apple-darwin24)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../../../../include/c++/v1"
+        ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../../../../aarch64-apple-darwin24/include"
+        ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../../../../include/c++/v1"
+        ignoring duplicate directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring duplicate directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed"
+        ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../../../../aarch64-apple-darwin24/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include
+         /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include
+         /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+        End of search list.
+        clang version 17.0.6
+        Target: arm64-apple-darwin24.2.0
+        Thread model: posix
+        InstalledDir: /opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin
+         (in-process)
+         "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin/clang-17" -cc1as -triple arm64-apple-macosx15.0.0 -target-sdk-version=15.2 -filetype obj -main-file-name - -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -fdebug-compilation-dir=/Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/CMakeScratch/TryCompile-axr2iR -dwarf-debug-producer "clang version 17.0.6" -dwarf-version=4 -mrelocation-model pic -o CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o -
+        Compiler executable checksum: dedb4d749933aedf635a71afbbf3f7a6
+        COMPILER_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/
+        LIBRARY_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../
+        COLLECT_GCC_OPTIONS='-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-O2' '-pipe' '-stdlib=libc++' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-isystem' '/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk' '-v' '-o' 'CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=15.0.0'  '-nodefaultexport' '-mcpu=apple-m1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /opt/homebrew/bin/aarch64-apple-darwin24-g++-14 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -v -Wl,-v CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_df96d   && :
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/aarch64-apple-darwin24-g++-14
+        COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/lto-wrapper
+        Target: aarch64-apple-darwin24
+        Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran,m2 --program-suffix=-14 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 14.2.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin24 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Homebrew GCC 14.2.0_1) 
+        COMPILER_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/
+        LIBRARY_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../
+        COLLECT_GCC_OPTIONS='-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-O2' '-pipe' '-stdlib=libc++' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-isystem' '/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk' '-L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib' '-v' '-o' 'cmTC_df96d' '-mmacosx-version-min=15.0.0' '-asm_macosx_version_min=15.0' '-nodefaultexport' '-mcpu=apple-m1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_df96d.'
+         /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/collect2 -demangle -dynamic -arch arm64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -platform_version macos 15.0.0 0.0 -o cmTC_df96d -L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14 -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../.. -lemutls_w -lheapt_w -search_paths_first -headerpad_max_install_names -headerpad_max_install_names -dead_strip_dylibs -rpath /opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -v CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lc++abi -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14 -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current
+        collect2 version 14.2.0
+        /opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin/ld -demangle -dynamic -arch arm64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -platform_version macos 15.0.0 0.0 -o cmTC_df96d -L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14 -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../.. -lemutls_w -lheapt_w -search_paths_first -headerpad_max_install_names -headerpad_max_install_names -dead_strip_dylibs -rpath /opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -v CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lc++abi -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14 -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current
+        @(#)PROGRAM:ld  PROJECT:ld64-711
+        BUILD 01:31:26 Mar 15 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+        Library search paths:
+        	/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib
+        	/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14
+        	/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc
+        	/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib
+        Framework search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include]
+          add: [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include]
+          add: [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        end of search list found
+        collapse include dir [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include] ==> [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include]
+        collapse include dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14/include]
+        collapse include dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        implicit include dirs: [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14/include;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/CMakeScratch/TryCompile-axr2iR']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin/ninja -v cmTC_df96d]
+        ignore line: [[1/2] /opt/homebrew/bin/aarch64-apple-darwin24-g++-14   -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk   -v -Wl -v -o CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/aarch64-apple-darwin24-g++-14]
+        ignore line: [Target: aarch64-apple-darwin24]
+        ignore line: [Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c c++ objc obj-c++ fortran m2 --program-suffix=-14 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 14.2.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin24 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Homebrew GCC 14.2.0_1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-O2' '-pipe' '-stdlib=libc++' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-isystem' '/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk' '-v' '-o' 'CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=15.0.0'  '-nodefaultexport' '-mcpu=apple-m1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_df96d.dir/']
+        ignore line: [ /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/cc1plus -quiet -v -iprefix /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/ -D__DYNAMIC__ -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk /opt/homebrew/Caskroom/miniconda/base/envs/ros2/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -fPIC -quiet -dumpdir CMakeFiles/cmTC_df96d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mmacosx-version-min=15.0.0 -mcpu=apple-m1 -mlittle-endian -mabi=lp64 -O2 -stdlib=libc++ -version -ftree-vectorize -fPIC -fstack-protector-strong -fvisibility-inlines-hidden -fmessage-length=0 -o - |]
+        ignore line: [ as -arch arm64 -v -mmacosx-version-min=15.0 -o CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o -]
+        ignore line: [GNU C++17 (Homebrew GCC 14.2.0_1) version 14.2.0 (aarch64-apple-darwin24)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../../../../include/c++/v1"]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../../../../aarch64-apple-darwin24/include"]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../../../../include/c++/v1"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../../../../aarch64-apple-darwin24/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include]
+        ignore line: [ /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include]
+        ignore line: [ /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/include-fixed]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        ignore line: [End of search list.]
+        ignore line: [clang version 17.0.6]
+        ignore line: [Target: arm64-apple-darwin24.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/opt/homebrew/Caskroom/miniconda/base/envs/ros2/bin/clang-17" -cc1as -triple arm64-apple-macosx15.0.0 -target-sdk-version=15.2 -filetype obj -main-file-name - -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -fdebug-compilation-dir=/Users/jagjeevankashid/ros2_ws/src/bumperbot_cpp/build/CMakeFiles/CMakeScratch/TryCompile-axr2iR -dwarf-debug-producer "clang version 17.0.6" -dwarf-version=4 -mrelocation-model pic -o CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o -]
+        ignore line: [Compiler executable checksum: dedb4d749933aedf635a71afbbf3f7a6]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-O2' '-pipe' '-stdlib=libc++' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-isystem' '/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk' '-v' '-o' 'CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=15.0.0'  '-nodefaultexport' '-mcpu=apple-m1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /opt/homebrew/bin/aarch64-apple-darwin24-g++-14 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /opt/homebrew/Caskroom/miniconda/base/envs/ros2/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -v -Wl -v CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_df96d   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/aarch64-apple-darwin24-g++-14]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/lto-wrapper]
+        ignore line: [Target: aarch64-apple-darwin24]
+        ignore line: [Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c c++ objc obj-c++ fortran m2 --program-suffix=-14 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 14.2.0_1' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin24 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Homebrew GCC 14.2.0_1) ]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-O2' '-pipe' '-stdlib=libc++' '-fvisibility-inlines-hidden' '-fmessage-length=0' '-isystem' '/opt/homebrew/Caskroom/miniconda/base/envs/ros2/include' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk' '-L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib' '-v' '-o' 'cmTC_df96d' '-mmacosx-version-min=15.0.0' '-asm_macosx_version_min=15.0' '-nodefaultexport' '-mcpu=apple-m1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_df96d.']
+        link line: [ /opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/collect2 -demangle -dynamic -arch arm64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -platform_version macos 15.0.0 0.0 -o cmTC_df96d -L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14 -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc -L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../.. -lemutls_w -lheapt_w -search_paths_first -headerpad_max_install_names -headerpad_max_install_names -dead_strip_dylibs -rpath /opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib -v CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lc++abi -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14 -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc -rpath /opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current]
+          arg [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../libexec/gcc/aarch64-apple-darwin24/14/collect2] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.0.0] ==> ignore
+          arg [0.0] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_df96d] ==> ignore
+          arg [-L/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib] ==> dir [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib]
+          arg [-L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14] ==> dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14]
+          arg [-L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc] ==> dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc]
+          arg [-L/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../..] ==> dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../..]
+          arg [-lemutls_w] ==> lib [emutls_w]
+          arg [-lheapt_w] ==> lib [heapt_w]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-dead_strip_dylibs] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_df96d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lc++abi] ==> lib [c++abi]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lSystem] ==> lib [System]
+          arg [-no_compact_unwind] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [@loader_path] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current] ==> ignore
+        Library search paths: [;/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/]
+        remove lib [System]
+        collapse library dir [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib] ==> [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib]
+        collapse library dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14]
+        collapse library dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc]
+        collapse library dir [/opt/homebrew/Cellar/gcc/14.2.0_1/bin/../lib/gcc/current/gcc/aarch64-apple-darwin24/14/../../..] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current]
+        collapse library dir [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib] ==> [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib]
+        collapse library dir [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14]
+        collapse library dir [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc]
+        collapse library dir [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current] ==> [/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        implicit libs: [emutls_w;heapt_w;c++;c++abi;gcc]
+        implicit objs: []
+        implicit dirs: [/opt/homebrew/Caskroom/miniconda/base/envs/ros2/lib;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc/aarch64-apple-darwin24/14;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current/gcc;/opt/homebrew/Cellar/gcc/14.2.0_1/lib/gcc/current;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+      
+      
+...
